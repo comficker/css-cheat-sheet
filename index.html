@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@2.4.1/dist/tippy.all.min.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Css Cheat Sheet</title>
+    <meta name="description" content="A reference for CSS goodness.">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <!-- fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Cutive+Mono|Rye|Ubuntu|Shadows+Into+Light|Patrick+Hand+SC|Averia+Serif+Libre|Nanum+Pen+Script"
+        rel="stylesheet">
+</head>
+<body>
+<div class="scrollblock block-title">
+    <h1>Css Cheat Sheet</h1>
+    <p class="inspiredby"><span>A reference for CSS goodness.</span></p>
+    <p><a href="https://simplecheatsheet.com/tag/css-cheat-sheet/"><span
+        class="underline">Full CSS Cheat Sheet</span></a></p>
+</div>
+<div class="scrollblock" style="background: #0C4B33; color: #FFFFFF">
+    <h2>Element selectors</h2>
+    <p><strong>Element</strong> -- selects all h2 elements on the page</p>
+    <p>
+        <code id="element">h2 { foo: bar; }
+        </code>
+        <!-- Trigger -->
+        <button class="btn" title="Copied!" data-clipboard-target="#element">
+            <img class="clippy" src="images/clippy.svg" width="13" alt="Copy to clipboard">
+        </button>
+    </p>
+    <p><strong>Group</strong> -- selects all h1, h2 and h3 elements on the page</p>
+    <p>
+        <code id="element-group">h1, h2, h3 { foo: bar; }
+        </code>
+        <!-- Trigger -->
+        <button class="btn" title="Copied!" data-clipboard-target="#element-group">
+            <img class="clippy" src="images/clippy.svg" width="13" alt="Copy to clipboard">
+        </button>
+    </p>
+</div>
+<div class="scrollblock" style="background: #E3D8F1; color: #FFFFFF">
+    <h2>Class and ID selectors
+    </h2>
+    <p><b>Class</b> -- selects all elements with class attribute containing foo or only p elements with that class</p>
+    <p>
+        <code id="class-selector">.foo { bar: fum; }</code>
+        <button class="btn" title="Copied!" data-clipboard-target="#class-selector">
+            <img class="clippy" src="images/clippy.svg" width="13" alt="Copy to clipboard">
+        </button>
+    </p>
+    <p><strong>ID</strong> -- selects the element with 'baz' id attribute value
+    </p>
+    <p>
+        <code id="id-selector">#foo { bar: fum; }</code>
+        <button class="btn" title="Copied!" data-clipboard-target="#id-selector">
+            <img class="clippy" src="images/clippy.svg" width="13" alt="Copy to clipboard">
+        </button>
+    </p>
+</div>
+<div class="scrollblock" style="background: #5D5F71; color: #FFFFFF">
+    <h2>Contextual selectors</h2>
+    <p><strong>Descendant</strong> -- selects all p elements within the infinite-level hierarchy of element #foo descendants
+    </p>
+    <p>
+        <code id="descendant">#foo p { bar: fum; }</code>
+        <!-- Trigger -->
+        <button class="btn" title="Copied!" data-clipboard-target="#descendant">
+            <img class="clippy" src="images/clippy.svg" width="13" alt="Copy to clipboard">
+        </button>
+    </p>
+    <p><strong>Adjacent sibling</strong> -- selects the sibling element p that is immediately next to h2 element
+    </p>
+    <p>
+        <code id="Adjacent">h2 + p { foo: bar; }</code>
+        <!-- Trigger -->
+        <button class="btn" title="Copied!" data-clipboard-target="#Adjacent">
+            <img class="clippy" src="images/clippy.svg" width="13" alt="Copy to clipboard">
+        </button>
+    </p>
+    <p><strong>Child</strong> -- selects all p elements that are immediate children of #foo element
+    </p>
+    <p>
+        <code id="Child">#foo > p { bar: fum; }</code>
+        <!-- Trigger -->
+        <button class="btn" title="Copied!" data-clipboard-target="#Child">
+            <img class="clippy" src="images/clippy.svg" width="13" alt="Copy to clipboard">
+        </button>
+    </p>
+    <p><strong>General sibling</strong> -- selects all elements p that are siblings to the h2 element
+    </p>
+    <p>
+        <code id="General-selector">#foo > p { bar: fum; }</code>
+        <!-- Trigger -->
+        <button class="btn" title="Copied!" data-clipboard-target="#General-selector">
+            <img class="clippy" src="images/clippy.svg" width="13" alt="Copy to clipboard">
+        </button>
+    </p>
+</div>
+<div class="scrollblock" style="background: #AD8A64; color: #FFFFFF">
+    <h2>Pseudo-class selectors</h2>
+    <p><b>Unvisited link</b> -- applies to link elements that have not been visited</p>
+    <p>
+        <code id="Unvisited-link-selector">a:link { foo: bar; }</code>
+        <button class="btn" title="Copied!" data-clipboard-target="#Unvisited-link-selector">
+            <img class="clippy" src="images/clippy.svg" width="13" alt="Copy to clipboard">
+        </button>
+    </p>
+    <p><b>Visited link</b> -- applies to link elements that have been visited</p>
+    <p>
+        <code id="Visited-link">a:visited { foo: bar; }</code>
+        <button class="btn" title="Copied!" data-clipboard-target="#Visited-link">
+            <img class="clippy" src="images/clippy.svg" width="13" alt="Copy to clipboard">
+        </button>
+    </p>
+    <p><b>Focus state</b> -- applies to selected .foo element that is ready for input</p>
+    <p>
+        <code id="Focus-state">.foo:focus { bar: fum; }</code>
+        <button class="btn" title="Copied!" data-clipboard-target="#Focus-state">
+            <img class="clippy" src="images/clippy.svg" width="13" alt="Copy to clipboard">
+        </button>
+    </p>
+    <p><b>Hover state</b> -- applies when mouse pointer is over the .foo element
+    </p>
+    <p>
+        <code id="Hover-state">.foo:hover { bar: fum; }</code>
+        <button class="btn" title="Copied!" data-clipboard-target="#Hover-state">
+            <img class="clippy" src="images/clippy.svg" width="13" alt="Copy to clipboard">
+        </button>
+    </p>
+    <p><b>Active state</b> -- applies when .foo element is in process of being clicked
+    </p>
+    <p>
+        <code id="Active-state">.foo:active { bar: fum; }</code>
+        <button class="btn" title="Copied!" data-clipboard-target="#Active-state">
+            <img class="clippy" src="images/clippy.svg" width="13" alt="Copy to clipboard">
+        </button>
+    </p>
+</div>
+<div class="inspiredbyfooter">
+    <span>inspired by Roger Dudler's</span>
+</div>
+<script>
+    const clipboard = new ClipboardJS('.btn');
+
+    clipboard.on('success', function (e) {
+        e.clearSelection();
+    });
+
+    clipboard.on('error', function (e) {
+        console.error('Action:', e.action);
+        console.error('Trigger:', e.trigger);
+    });
+
+    tippy('.btn', {
+        title: 'copy',
+        delay: 0,
+        arrow: false,
+        arrowType: 'round',
+        size: 'medium',
+        duration: 0,
+        animation: 'scale',
+        trigger: 'click',
+        onShow(instance) {
+            //console.log(instance);
+            let btn = this;
+            btn.click();
+            setTimeout(function () {
+                btn.click();
+            }, 290);
+        },
+    });
+    const template = document.querySelector('template');
+</script>
+</body>
+</html>
