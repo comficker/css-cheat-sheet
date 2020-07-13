@@ -1,2 +1,2 @@
-# django-cheat-sheet
-Full [Django Cheat Sheet](http://simplecheatsheet.com/tag/django-cheat-sheet/)
+# Css Cheat Sheet
+Full [Css Cheat Sheet](http://simplecheatsheet.com/tag/css-cheat-sheet/)
